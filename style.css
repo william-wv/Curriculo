@@ -25,11 +25,18 @@ body{
     top: 35%;
     text-align: center;
 }
+.name{
+    font-family: var(--fonte-titulo);
+    font-size: 1.5em;
+    text-align: center;
+    position: relative;
+    top: 35%;
+}
 .container{    
     height: 100vh;
 }
 .conteudo{
-    height: 250vh;
+    height: 200vh;
     background-color: var(--branco-principal);
 }
 .h1a{
