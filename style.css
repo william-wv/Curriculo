@@ -108,8 +108,7 @@ main{
   height: 40vh;
   width: 20vw;
 }
-@media screen and (max-width:1620px){
-}
+
 .txt__sobre{
     text-align: center;
     display: flex;
@@ -225,4 +224,6 @@ footer {
     }
 .rodapé{
     text-align: center;
+}
+@media screen and (max-width:1620px){
 }
