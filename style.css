@@ -1,172 +1,228 @@
-@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
-
-:root{
+:root {
     --fundo-principal:#0095ff;
+    --azul-secundario: #066cb6;
     --branco-principal:#fefefe;
-    --cinza-secundario:#C0C0C0;
+    --cinza-secundario:#dadadad9;
     --corpreta:#111;
-    --fonte-titulo:"Righteous";
-    
 }
-body{
-    background-color: var(--fundo-principal);
-    color: var(--corpreta);
-}
-*{
+
+* {
     margin: 0;
     padding: 0;
 }
-.titulo{
-    font-family: 'Righteous', cursive;
-    font-size: 5em;
-    font-weight: 400;
-    position: relative;
-    top: 35%;
-    text-align: center;
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
 }
-.name{
-    font-family: var(--fonte-titulo);
-    font-size: 1.5em;
-    text-align: center;
-    position: relative;
-    top: 35%;
-}
-.container{    
-    height: 100vh;
-}
-.conteudo{
-    height: 200vh;
-    background-color: var(--branco-principal);
-}
-.h1a{
-    font-family: 'Tektur', cursive;
-    padding: 0;
-    position: relative;
-    text-align: center;
-    right: 10.2em;
-    font-size: 0.5em;
-    color: var(--corpreta);
-    top: 20vh;
-    right: 58vh;
-}
-.h1a{
-    background-color: var(--fundo-principal);
-    opacity: 0.8;
-    margin: 10px;
-    padding: 10px;
-    display: inline-block;
-    top: 10vh;
-}
-.p2{
-    color: var(--corpreta);
-    line-height: 2;
-    font-family: sans-serif;
-    text-align: center;
-    font-weight: 300;
-    position: relative;
-    font-size: 2vh;
-    top: 10vh;
-    right: 58vh;
-    max-width: 400px;
-    padding: 10px;
-}
-.h1b{
-    left: 60vh;
-    font-family: "tektur", cursive;
-    padding: 0;
-    position: relative;
-    font-size: 0.5em;
-    color: var(--corpreta);
-    top: 5vh;
-}
-.h1b{
-    background-color: var(--fundo-principal);
-    opacity: 0.8;
-    margin: 10px;
-    padding: 10px;
-    display: inline-block;
-    top: 20vh;
-}
-.p2b{
-    color: var(--corpreta);
-    line-height: 2;
-    font-family: sans-serif;
-    text-align: center;
-    font-weight: 300;
-    position: relative;
-    font-size: 2vh;
-    top: 20vh;
-    left: 59vh;
-    max-width: 400px;
-    padding: 10px;
-}
-.h1c{
-    font-family: 'Tektur', cursive;
-    padding: 0;
-    position: relative;
-    text-align: center;
-    right: 10.2em;
-    font-size: 0.5em;
-    color: var(--corpreta);
-    top: 20vh;
-    right: 58vh;
-}
-.h1c{
-    background-color: var(--fundo-principal);
-    opacity: 0.8;
-    margin: 10px;
-    padding: 10px;
-    display: inline-block;
-    top: 30vh;
-}
-dt,dd{
-    color: var(--corpreta);
-    line-height: 1;
-    font-family: sans-serif;
-    text-align: left;
-    font-weight: 300;
-    position: relative;
-    font-size: 2vh;
-    top: 30vh;
-    right: 59vh;
-    max-width: 400px;
-    padding: 10px;
-    text-align: center;
-}
-
-
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
-* {
-    margin: 0 auto;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Open Sans', sans-serif;
-}
-
-#menu-h{
-    background-color: rgb(37, 37, 39);
-}
-
-#menu-h ul {
-    max-width: 800px;
-    list-style: none;
-    padding: 0;
-}
-
-#menu-h ul li {
-    display: inline;
-}
-
-#menu-h ul li a {
-    color: #FFF;
-    padding: 20px;
-    display: inline-block;
+a{
     text-decoration: none;
-    transition: background .4s;
+}
+span{
+    background-color: var(--azul-secundario);
+    padding: 15px;
+    border: var(--corpreta) 2px solid; 
+    border-radius: 20px;
+}   
+main{
+    background-color: #f1f1f1;
+    height: 110vh;
+    width: 100vw; 
 }
 
-#menu-h ul li a:hover {
-    background-color: rgb(24, 139, 233);
+.border{
+    text-align: center;
+    position: relative;
+    top: 40%;
+    font-size: 2em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* === rodapé === */
+.container_principal{
+    background-color: var(--corpreta);
+    position: fixed;
+    color: var(--cinza-secundario);
+    padding: 5px;
+    width: 100vw;
+    z-index: 10;
+}
+.titulo{
+    font-size: 1.9em;
+}
+.container{
+    text-align: center;
+    padding: 0px 10px;
+    padding-left: 20px;
+    opacity: 80%;
+}
+.nome{
+    opacity: 85%;
+    position: relative;
+    text-align: center;
+    top: 40vh;
+    font-size: 6rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+/* navbar */
+.container_principal:hover{
+    transform: scale(1.01);
+}
+.container_principal,.nav__wrapper__list__item{
+    display: inline-flex;
+}
+.div__nav_bar{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+.nav__wrapper__list__item{
+    padding: 10px 15px;
+    color: var(--cinza-secundario);
+    font-size: 1.9em;
+}
+.nav__wrapper__list__item:hover{
+    color: #055086;
+}
+.container_nome{
+    border-bottom: var(--corpreta) 2px solid ;
+    max-width: 100vw;
+    height: 100vh;
+    background-color: var(--fundo-principal);
+}
+
+/* === conteudo === */
+
+
+.box{
+    display: flex;
+    flex-direction: row;
+}
+
+.div_box{
+    width: 40vw;
+    height: 50vh;
+}
+
+.bloco__sobre{
+  height: 40vh;
+  width: 20vw;
+}
+@media screen and (max-width:1620px){
+}
+.txt__sobre{
+    text-align: center;
+    display: flex;
+    width: 400px;
+    position: relative;
+    top: 30%;
+    font-size: 1.5em;
+}
+.div__image{
+    width:10vw;
+}
+.image{
+    position: relative;
+    top: 20%;
+    left: 200px;
+    border: var(--corpreta) 5px solid;
+}
+
+.listas{
+    width: 56vw;
+}
+.lista__ul{
+    height: 20vh;
+    position: relative;
+    top: 20%;
+}
+.h1__lista{
+    padding:20px;
+    text-decoration-line: underline;
+ 
+}
+.lista_iten{
+    position: relative;
+    top: 50%;
+    text-align: center;
+    list-style: none;
+    font-size: 1.5em;
+    font-family:Arial, Helvetica, sans-serif ;
+    
+}
+.lista__programacao,.lista__equipe{
+    display: inline-flex;
+    flex-direction: row-reverse;
+    padding-right: 50px;
+}
+/* === rodapé === */
+footer {
+    background-color: #555555;
+    padding: 10px;
+    color:var(--cinza-secundario);
+}
+.txt_redes{
+    font-size: 2rem;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font: 500;
+    padding: 5px;
+}
+.btn_social { 
+	width:100%; 
+	float:left; 
+	display:flex; 
+	margin:auto; 
+}
+.btn_social ul  { 
+	width:auto; 
+	margin:auto; 
+	float:left; 
+	display:block; 
+}
+.btn_social ul li  { 
+	position:relative; 
+	background: var(--cinza-secundario); 
+	list-style:none; 
+	float:left; 
+	margin:5px; 
+	z-index:1; 
+	overflow:hidden; 
+	border-radius:5px; 
+	font-size:1.5em; 
+	text-align:center; 
+}
+.btn_social ul li a  { 
+	width:50px; 
+	height:50px; 
+	line-height:53px; 
+	display:block; 
+	text-decoration:none; 
+	color:#fff; 
+	transition:.4s;
+}
+.btn_social ul li::before { 
+	transition:0.4s; 
+	position:absolute; 
+	content:''; 
+	width:100%; 
+	height:100%; 
+	top:95%; 
+	left:0; 
+	background:var(--fundo-principal); 
+	z-index:-1; 
+	transform: scale(1); 
+	transition:.4s; 
+}
+.btn_social ul li:hover::before { transition:0.4s; top:0%; }
+.btn_social ul li a:hover       { color:#555555; }
+
+.incon{
+        width: 30px;
+        height: 30px;
+        position: relative;
+        top: 10%;
+    }
+.rodapé{
+    text-align: center;
 }
