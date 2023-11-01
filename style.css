@@ -1,3 +1,4 @@
+
 :root {
     --fundo-principal:#0095ff;
     --azul-secundario: #066cb6;
@@ -115,7 +116,7 @@ main{
     width: 400px;
     position: relative;
     top: 30%;
-    font-size: 1.5em;
+    font-size: 1.5em;   
 }
 .div__image{
     width:10vw;
@@ -146,10 +147,9 @@ main{
     text-align: center;
     list-style: none;
     font-size: 1.5em;
-    font-family:Arial, Helvetica, sans-serif ;
-    
+    font-family:Arial, Helvetica, sans-serif ;  
 }
-.lista__programacao,.lista__equipe{
+.lista__programacao,.lista__equipe,.lista__idiomas{
     display: inline-flex;
     flex-direction: row-reverse;
     padding-right: 50px;
@@ -222,8 +222,9 @@ footer {
         position: relative;
         top: 10%;
     }
-.rodapé{
+.rodapé{   
     text-align: center;
 }
 @media screen and (max-width:1620px){
+    
 }
