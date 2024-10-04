@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Montserrat:ital,wght@0,500;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
+
+
+
+@import 'reset.css'; 
+@import 'a-header.css';
+@import 'a-banner.css';
+@import 'a-about-me.css';
+@import 'a-video-apresentacao.css';
+@import 'a-competencias.css';
+@import 'areas.css';
+@import 'a-footer.css';
+
+:root{
+    --color-primary: #00308F;
+    --color-secundary: #385692;
+    --color-terciary: rgb(243,243,243);
+    --color-green: rgb(61, 104, 89);
+    --color-black: #020403;
+    --color-gray: #747474;
+    --color-white: #ffffff;
+    --color-creme: #decfbb;
+}
+
+html{
+    overflow-x: hidden;
+}
+
+b,li,a,p{
+    color: var(--color-black);
+    font-family: "Varela Round", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+h1{  
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: italic; 
+
+}
+

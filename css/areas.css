@@ -1,0 +1,20 @@
+.area-atuação{
+    padding-top: 100px;
+    padding-bottom: 150px;
+}
+
+.title-area{
+    text-align: center;
+    font-size: 45px;
+    padding-bottom: 50px;
+    color: var(--color-secundary);
+}
+
+.btn-curriculo{
+    padding-left: 5px;
+    background-color: var(--color-secundary);
+    position: relative;
+    top: 40%;
+    width: 10vw;
+    left: 15vw;
+}

@@ -1,0 +1,15 @@
+.sobre-mim{
+    padding-top: 100px;
+    padding-bottom: 150px;
+    background-color: var(--color-secundary);
+}
+
+.title-about{
+    color: white !important;
+    padding: 5px;
+}
+
+.text-aboult{
+    color:azure;
+    line-height: 1.6rem;
+}

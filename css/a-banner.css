@@ -1,0 +1,37 @@
+.banner{
+    padding-bottom: 150px;
+}
+
+.your-photo-banner{
+    width: 550px;
+   
+}
+
+.div-name-banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 190px;
+}
+
+.h1-name{
+    font-size: 80px;
+    text-transform: uppercase;
+    font-family: "Baskervville SC", serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.div-subtitle-banner{
+    position: relative;
+    top: 190px;
+}
+
+.btn-wpp{
+    background-color: var(--color-green);
+    border-radius: 15px;
+    color: var(--color-white);
+    position: relative;
+    top: 200px;
+}
